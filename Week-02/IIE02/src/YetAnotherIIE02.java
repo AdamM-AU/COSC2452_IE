@@ -76,11 +76,13 @@ public class YetAnotherIIE02 {
 		// Dump the data provided to user to screen
 		gt.println("User Provided Information"); // Print this then move to next line
 		gt.println("-------------------------"); // Print this then move to next line
-		gt.println("Sequence of Charecters [String] :: " + seq_chars);
-		gt.println("        Single Charecter [char] :: " + sngl_char);
-		gt.println("             Whole Number [int] :: " + whole_number);
-		gt.println("   Number with Decimal [double] :: " + decimal);
-		gt.println("           True/False [boolean] :: " + TF);
-		
+		gt.println("Sequence of Charecters [String] :: " + seq_chars); // Print this + variable then move to next line
+		gt.println("        Single Charecter [char] :: " + sngl_char); // Print this + variable then move to next line
+		gt.println("             Whole Number [int] :: " + whole_number);  // Print this + variable then move to next line
+		gt.println("   Number with Decimal [double] :: " + decimal);  // Print this + variable then move to next line
+		gt.println("           True/False [boolean] :: " + TF);  // Print this + variable then move to next line
+	
+		gt.println(""); // Give me a blank line / Print this then move to next line
+		gt.println("Thanks For Playing!"); // Print this then move to next line
 	}
 }
