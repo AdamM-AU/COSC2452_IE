@@ -46,13 +46,32 @@ public class YetAnotherIIE02 {
 		} else {
 			// Bad User input - probably got a non numerical value or nothing at all
 			// Pick Random Value
-			whole_number = 0;
+			Random rand = new Random(); //Initialize Class Object Random
+			int intBoundary = 6; // Random Int Boundary (Cannot be hit this number or higher) 
+			whole_number = rand.nextInt(intBoundary); // Select Random int taking into account boundary and set variable
 		}
 		
+		// Input 4 - Number with a decimal point
+		String decimal_input = gt.getInputString("Enter any number with 2 decimal places:");  // Fetch User input and stuff it into a variable
+		if (decimal_input.matches("^\\d+\\.\\d+")) { // Check if input string is decimal (REGEX)
+			// User Supplied Decimal input
+			decimal =  Double.parseDouble(decimal_input);
+		} else {
+			// Bad User input
+			// Pick Random Value
+			Random rand = new Random(); //Initialize Class Object Random 
+			decimal = rand.nextInt() * 100; // Select Random Double then multiply that by 100
+		}
 		
-		
-		// Process User provided data in to appropriate data types
-		
+		// Input 5 - Boolean Question
+		String TF_input = gt.getInputString("Did this IIE Suck? (Yes/No)");  // Fetch User input and stuff it into a variable
+		TF_input = TF_input.toLowerCase(); // Convert input to lower-case
+		if (TF_input.matches("yes|true|y|t")) {
+			TF = true;
+		} else {
+			// Consider all other options as a false
+			TF = false;
+		}
 		
 		// Dump the data provided to user to screen
 		gt.println("User Provided Information"); // Print this then move to next line
