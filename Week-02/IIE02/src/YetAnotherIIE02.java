@@ -60,7 +60,7 @@ public class YetAnotherIIE02 {
 			// Bad User input
 			// Pick Random Value
 			Random rand = new Random(); //Initialize Class Object Random 
-			decimal = rand.nextInt() * 100; // Select Random Double then multiply that by 100
+			decimal = rand.nextDouble() * 100; // Select Random Double then multiply that by 100
 		}
 		
 		// Input 5 - Boolean Question
