@@ -1,0 +1,13 @@
+A) I had to add another class to the "backend" I would need to:
+
+    follow the naming convention and use descriptive names
+    avoid using already in use class names
+    attempt to recycle/reuse existing code for similar / repetitive tasks
+    DO NOT add classes for the sake of adding classes (like we just did for this IIE)
+    avoid changes that will require major code modification upstream in the project
+
+B) if i was to add a class i would introduce SQLite as a "backend" storage option i would add classes such as updateSqlite() and querySqlite() to fetch and input data into the sql database.
+
+The purpose of this would be to store the user input outside of the application; allowing the user to close and reopen the app while keeping the data intact and will also allow it be used by multiple users at the same time using the same data.
+
+I would write the new class to avoid any changes outside of backend.java, and simple add a backend selection variable to  new BackEnd(String backend), which would default to the current no SQL implementation unless  new BackEnd("SQLite);
