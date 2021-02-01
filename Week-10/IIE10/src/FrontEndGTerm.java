@@ -14,7 +14,7 @@ public class FrontEndGTerm {
 		this.backEnd = backEnd; // Store a local copy of backEnd
 		
 		this.guiGT = new GTerm(710, 400);
-		this.guiGT.println(" YetAnotherLousyIIE09"); // Print this then move to next line
+		this.guiGT.println(" YetAnotherLousyIIE10"); // Print this then move to next line
 		this.guiGT.println("----------------------"); // Print this then move to next line
 		this.guiGT.println(""); // Give me a blank line / Print this then move to next line
 		
