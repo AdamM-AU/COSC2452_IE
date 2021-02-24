@@ -1,0 +1,49 @@
+Python:
+a = ["fizz", "baz", "buzz"]
+while a:
+	if a == "fizz":
+		print("wizz" + a.pop(-1))
+    
+	else:
+		print(a.pop(-1))
+		
+----------------------------------------------
+Java: 
+String[] a = {"fizz", "baz", "buzz"}
+List<Element> list = Arrays.asList(a);
+
+int counter = 0;
+
+while (list.size() > counter) {
+	String tmp = list.get(counter);
+	
+	if (tmp == "fizz") {
+		System.out.println("wizz" + tmp);
+		list.remove(counter);
+	} else {
+		System.out.println(tmp);
+		list.remove(counter);
+	}
+	counter++;
+}
+
+----------------------------------------------
+C:
+#define MAX_STRING_SIZE 40
+
+char arr[][MAX_STRING_SIZE] =
+{ "fizz",
+  "baz",
+  "buzz"
+};
+
+int length = sizeof(arr)/sizeof(arr[0]);   
+int counter;
+
+while (length > counter) {
+	if (arr[counter] == "fizz") {
+		printf("wizz%d\n", arr[counter]");
+	else {
+		printf("%d\n", arr[counter]");
+	}
+}
